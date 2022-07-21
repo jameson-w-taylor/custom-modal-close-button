@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { IonModal } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  @ViewChild(IonModal) modal: IonModal;
 
   constructor() {}
+
+  cancel() {
+    this.modal.dismiss(null, 'cancel');
+  }
 
 }

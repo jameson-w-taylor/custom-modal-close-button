@@ -25,3 +25,15 @@
 #container a {
   text-decoration: none;
 }
+
+.close-button-container {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  z-index: 11;
+}
+
+.close-button {
+  --padding-start: 2px;
+  --padding-end: 2px;
+}
